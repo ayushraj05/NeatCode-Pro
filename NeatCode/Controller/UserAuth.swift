@@ -9,21 +9,50 @@ import UIKit
 
 class UserAuth: UIViewController {
 
+    @IBOutlet weak var UserNameEntered: UITextField!
+    
+    var leetcode = LeetcodeManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+
+   
+
+}
+
+//MARK: - UITEXTFieldDelegate
+
+extension UserAuth: UITextFieldDelegate{
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func FetchDataGotPressed(_ sender: UIButton) {
+        UserNameEntered.endEditing(true) // forcefully stoping the edditing in the textField
     }
-    */
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        UserNameEntered.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != ""{
+            return true
+        }
+        else{
+            textField.placeholder = "Type something"
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        if let userName =  UserNameEntered.text  {
+            // will send the username to the viewController to fech the data :)
+            leetcode.fetchData(username: userName)
+        }
+        
+        UserNameEntered.text = ""
+    }
 
 }

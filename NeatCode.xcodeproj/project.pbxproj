@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63C4AB952C06112500B08D76 /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4AB942C06112500B08D76 /* UserAuth.swift */; };
+		63C4AB972C064E6000B08D76 /* LeetcodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4AB962C064E6000B08D76 /* LeetcodeManager.swift */; };
 		63E78DB62C05E37A00C8E159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E78DB52C05E37A00C8E159 /* AppDelegate.swift */; };
 		63E78DB82C05E37A00C8E159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E78DB72C05E37A00C8E159 /* SceneDelegate.swift */; };
 		63E78DBA2C05E37A00C8E159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E78DB92C05E37A00C8E159 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63C4AB942C06112500B08D76 /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
+		63C4AB962C064E6000B08D76 /* LeetcodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeManager.swift; sourceTree = "<group>"; };
 		63E78DB22C05E37A00C8E159 /* NeatCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeatCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E78DB52C05E37A00C8E159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E78DB72C05E37A00C8E159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		63E78DCE2C05EC2000C8E159 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				63C4AB942C06112500B08D76 /* UserAuth.swift */,
 				63E78DB92C05E37A00C8E159 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -90,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				63E78DCB2C05EB5600C8E159 /* SemiCircularProgressView.swift */,
+				63C4AB962C064E6000B08D76 /* LeetcodeManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -165,6 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C4AB972C064E6000B08D76 /* LeetcodeManager.swift in Sources */,
+				63C4AB952C06112500B08D76 /* UserAuth.swift in Sources */,
 				63E78DBA2C05E37A00C8E159 /* ViewController.swift in Sources */,
 				63E78DCC2C05EB5600C8E159 /* SemiCircularProgressView.swift in Sources */,
 				63E78DB62C05E37A00C8E159 /* AppDelegate.swift in Sources */,

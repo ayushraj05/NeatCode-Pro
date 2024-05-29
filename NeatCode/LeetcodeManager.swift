@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct LeetcodeManager {
+    let leetcodeURL = "https://alfa-leetcode-api.onrender.com"
+    func fetchData(username: String){
+        let URLstring = "\(leetcodeURL)/\(username)"
+        self.PerformRequest(with: URLstring)
+    }
+    
+    func PerformRequest(with URLstring: String){
+        
+    }
+        
+}
