@@ -20,11 +20,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var Reputation: UILabel!
     @IBOutlet weak var Contribution: UILabel!
     
+    var leetcodeManager = LeetcodeManager()
+    
     override func viewDidLoad() {
         
         semiProgress.trackColor = .lightGray
         semiProgress.progressColor = .systemYellow
         semiProgress.progress = 0.5
+//        leetcodeManager.delegate = self
     }
     
     

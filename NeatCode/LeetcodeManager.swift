@@ -8,14 +8,24 @@
 import Foundation
 
 struct LeetcodeManager {
-    let leetcodeURL = "https://alfa-leetcode-api.onrender.com"
-    func fetchData(username: String){
-        let URLstring = "\(leetcodeURL)/\(username)"
-        self.PerformRequest(with: URLstring)
-    }
+//    let leetcodeURL = "https://alfa-leetcode-api.onrender.com"
+//    func fetchData(username: String){
+//        let URLstring = "\(leetcodeURL)/\(username)"
+//        self.PerformRequest(with: URLstring)
+//    }
     
-    func PerformRequest(with URLstring: String){
-        
-    }
+//    func PerformRequest(with URLstring: String){
+//        if let url = URL(string: URLstring){
+//            
+//            let session = URLSession(configuration: .default)
+//            
+//            let task = session.dataTask(with: url){(data, response, error) in
+//                if error != nil {
+//                    self.delegate?.didFailWithError(error!)?
+//                    return
+//                }
+//            }
+//        }
+//    }
         
 }
