@@ -7,8 +7,16 @@
 
 import Foundation
 
+protocol LeetcodeManagerDelegate{
+    func getDetails(_ leetcodeManager: LeetcodeManager, status : LeetcodeData)
+    func didFailWithError(_ error: Error)
+    
+}
+
 struct LeetcodeManager {
-//    let leetcodeURL = "https://alfa-leetcode-api.onrender.com"
+    let leetcodeURL = "https://alfa-leetcode-api.onrender.com"
+    
+    
 //    func fetchData(username: String){
 //        let URLstring = "\(leetcodeURL)/\(username)"
 //        self.PerformRequest(with: URLstring)

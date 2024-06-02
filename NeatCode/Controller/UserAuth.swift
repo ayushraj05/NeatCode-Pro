@@ -7,11 +7,14 @@
 
 import UIKit
 
+protocol UserAuthDelegate{
+    func searchUsername(username: String)
+}
+
 class UserAuth: UIViewController {
 
     @IBOutlet weak var UserNameEntered: UITextField!
-    
-    var leetcode = LeetcodeManager()
+    var delegate : UserAuthDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +26,7 @@ class UserAuth: UIViewController {
 
 }
 
-//MARK: - UITEXTFieldDelegate
+//MARK: - UITextFieldDelegate
 
 extension UserAuth: UITextFieldDelegate{
     
@@ -49,7 +52,7 @@ extension UserAuth: UITextFieldDelegate{
         
         if let userName =  UserNameEntered.text  {
             // will send the username to the viewController to fech the data :)
-            leetcode.fetchData(username: userName)
+            self.delegate?.searchUsername(username: userName)
         }
         
         UserNameEntered.text = ""

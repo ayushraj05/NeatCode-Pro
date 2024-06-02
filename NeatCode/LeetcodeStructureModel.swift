@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct LeetcodeStructureModel {
+    let NoOfEassy : Int
+    let NoOfMedium : Int
+    let NoOfHard : Int
+    let NoOfTotal : Int
+    let ranking : Int
+    let reputation : Int
+    let contributionPoint : Int
+    
+}

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct LeetcodeData: Codable{
+    
+}

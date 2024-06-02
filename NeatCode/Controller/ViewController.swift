@@ -9,8 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var semiProgress: SemiCircularProgressView!
+    // outlets
     
+    @IBOutlet weak var semiProgress: SemiCircularProgressView!
     @IBOutlet weak var userNameLable: UILabel!
     @IBOutlet weak var noOfEasy: UILabel!
     @IBOutlet weak var noOfMedium: UILabel!
@@ -20,7 +21,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var Reputation: UILabel!
     @IBOutlet weak var Contribution: UILabel!
     
+    // objects and variables
+    
     var leetcodeManager = LeetcodeManager()
+    
+    // view did load
     
     override func viewDidLoad() {
         
@@ -29,13 +34,16 @@ class ViewController: UIViewController {
         semiProgress.progress = 0.5
 //        leetcodeManager.delegate = self
     }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "fetchingUserName"{
-            // will use this further :)
-        }
-    }
 
+}
+
+//MARK: - UserAuthDelegate
+
+extension ViewController : UserAuthDelegate{
+    func searchUsername(username: String) {
+        <#code#>
+    }
+    
+    
 }
 
