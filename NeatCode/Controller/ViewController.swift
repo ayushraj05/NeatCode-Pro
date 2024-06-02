@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     // objects and variables
     
     var leetcodeManager = LeetcodeManager()
+    var user = ""
     
     // view did load
     
@@ -37,13 +38,33 @@ class ViewController: UIViewController {
 
 }
 
-//MARK: - UserAuthDelegate
+//MARK: - UserAuthDelegate & LeetcodeManagerDelegate
 
 extension ViewController : UserAuthDelegate{
     func searchUsername(username: String) {
-        <#code#>
+        user = username
+    }
+}
+
+//MARK: -LeetcodeManagerDelegate
+
+extension ViewController : LeetcodeManagerDelegate{
+    func getDetails(_ leetcodeManager: LeetcodeManager, structure: LeetcodeStructureModel) {
+        DispatchQueue.main.async {
+            self.userNameLable.text = self.user
+            self.noOfEasy.text = "\(structure.NoOfEassy)"
+            self.noOfMedium.text = "\(structure.NoOfMedium)"
+            self.noOfHard.text = "\(structure.NoOfHard)"
+            self.noOfTotal.text = "\(structure.NoOfTotal)"
+            self.Ranking.text = "\(structure.ranking)"
+            self.Reputation.text = "\(structure.reputation)"
+            self.Contribution.text = "\(structure.contributionPoint)"
+        }
+    }
+    
+    func didFailWithError(_ error: Error) {
+        print(error)
     }
     
     
 }
-
