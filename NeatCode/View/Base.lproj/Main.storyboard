@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZCR-Ph-f8y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jaa-hE-1qM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,79 +10,64 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--UserAuth-->
-        <scene sceneID="YYH-i0-pJt">
+        <!--User Auth-->
+        <scene sceneID="RoR-OF-gdi">
             <objects>
-                <viewController id="OKl-N4-HIT" customClass="UserAuth" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eA5-VN-3xi">
+                <viewController id="mLH-Zk-ped" customClass="UserAuth" customModule="NeatCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aOe-Z5-1it">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zuo-GF-LvP">
-                                <rect key="frame" x="0.0" y="203" width="393" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bg-pg-GCo">
+                                <rect key="frame" x="30" y="738" width="333" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Fetch Data">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="FetchDataGotPressed:" destination="mLH-Zk-ped" eventType="touchUpInside" id="eTt-Kk-YsJ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="UserProfile" id="ydC-Nj-HJb"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="d4A-6X-VJY">
+                                <rect key="frame" x="27" y="159.33333333333331" width="339" height="133.33333333333331"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yo9-Ke-FOb">
-                                        <rect key="frame" x="27" y="0.0" width="339" height="52.333333333333336"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7s-k1-CHc">
+                                        <rect key="frame" x="0.0" y="0.0" width="339" height="49"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="41"/>
                                         <color key="textColor" systemColor="systemYellowColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@ayush_raj_pal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ni-Wp-06M">
-                                        <rect key="frame" x="59" y="72.333333333333314" width="275" height="57.666666666666657"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@ayush_raj_pal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BdN-SU-Afl">
+                                        <rect key="frame" x="59.000000000000014" y="90" width="221.33333333333337" height="43.333333333333343"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="2X5-WO-tdq"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twk-kI-kEx">
-                                <rect key="frame" x="10" y="748" width="373" height="45"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="qcx-ek-tWA"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <buttonConfiguration key="configuration" style="plain" title="Fetch Data" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="FetchDataGotPressed:" destination="OKl-N4-HIT" eventType="touchUpInside" id="sKH-DQ-29S"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="UserProfile" id="v7p-SJ-kyM"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="NQs-Xt-3C6"/>
+                        <viewLayoutGuide key="safeArea" id="zrF-KE-wQX"/>
                         <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="NQs-Xt-3C6" firstAttribute="trailing" secondItem="zuo-GF-LvP" secondAttribute="trailing" id="077-d6-ZFZ"/>
-                            <constraint firstItem="zuo-GF-LvP" firstAttribute="leading" secondItem="NQs-Xt-3C6" secondAttribute="leading" id="4dK-2c-JZI"/>
-                            <constraint firstItem="NQs-Xt-3C6" firstAttribute="trailing" secondItem="Twk-kI-kEx" secondAttribute="trailing" constant="10" id="H49-1L-f1N"/>
-                            <constraint firstItem="Twk-kI-kEx" firstAttribute="leading" secondItem="NQs-Xt-3C6" secondAttribute="leading" constant="10" id="Uh2-gZ-weQ"/>
-                            <constraint firstItem="NQs-Xt-3C6" firstAttribute="bottom" secondItem="Twk-kI-kEx" secondAttribute="bottom" constant="25" id="V05-oN-xy4"/>
-                            <constraint firstItem="zuo-GF-LvP" firstAttribute="top" secondItem="NQs-Xt-3C6" secondAttribute="top" constant="100" id="xE6-hl-gGM"/>
+                            <constraint firstItem="zrF-KE-wQX" firstAttribute="trailing" secondItem="2bg-pg-GCo" secondAttribute="trailing" constant="30" id="Fl3-Sx-rFa"/>
+                            <constraint firstItem="zrF-KE-wQX" firstAttribute="bottom" secondItem="2bg-pg-GCo" secondAttribute="bottom" constant="30" id="UTi-eu-VO4"/>
+                            <constraint firstItem="2bg-pg-GCo" firstAttribute="leading" secondItem="zrF-KE-wQX" secondAttribute="leading" constant="30" id="dLG-m1-136"/>
+                            <constraint firstItem="d4A-6X-VJY" firstAttribute="centerY" secondItem="aOe-Z5-1it" secondAttribute="centerY" constant="-200" id="fL4-mF-b02"/>
+                            <constraint firstItem="d4A-6X-VJY" firstAttribute="centerX" secondItem="aOe-Z5-1it" secondAttribute="centerX" id="pIL-Sr-0bZ"/>
+                            <constraint firstItem="2bg-pg-GCo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zrF-KE-wQX" secondAttribute="leading" id="s3f-PJ-jOG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="UserAuth" id="hOl-2b-hsO">
-                        <barButtonItem key="backBarButtonItem" title="Previous" id="swr-wN-4pV"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="TiW-c0-lvi"/>
                     <connections>
-                        <outlet property="UserNamegotEntered" destination="5Ni-Wp-06M" id="NNL-Rl-L0v"/>
+                        <outlet property="UserNamegotEntered" destination="BdN-SU-Afl" id="8s8-EF-9cN"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v7W-LU-VaC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S5Y-C8-cEJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3176.3358778625952" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="4118.320610687023" y="3.5211267605633805"/>
         </scene>
         <!--NeatCode-->
         <scene sceneID="tne-QT-ifu">
@@ -429,25 +414,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3906.1068702290077" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="4832.8244274809158" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="mFq-rh-Oqk">
+        <scene sceneID="46j-Cw-3Uj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZCR-Ph-f8y" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jaa-hE-1qM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lzo-TJ-HKa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Bo-bw-vI7">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="OKl-N4-HIT" kind="relationship" relationship="rootViewController" id="F42-RZ-59k"/>
+                        <segue destination="mLH-Zk-ped" kind="relationship" relationship="rootViewController" id="PBX-Bz-LSU"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y1g-xa-HLi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Knk-lt-dmA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2442" y="4"/>
+            <point key="canvasLocation" x="3191.6030534351144" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
@@ -455,9 +440,6 @@
         <image name="fireball" width="2098" height="2780"/>
         <image name="flag" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="121"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

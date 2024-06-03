@@ -54,9 +54,9 @@ extension UserAuth: UITextFieldDelegate{
         if let userName =  UserNamegotEntered.text  {
             // will send the username to the viewController to fech the data :)
             self.delegate?.searchUsername(username: userName)
-            DispatchQueue.main.async {
-                self.performSegue(withIdentifier: "UserProfile", sender: self)
-            }
+//            DispatchQueue.main.async {
+//                self.performSegue(withIdentifier: "UserProfile", sender: self)
+//            }
         }
         
         UserNamegotEntered.text = ""
@@ -67,11 +67,11 @@ extension UserAuth: UITextFieldDelegate{
 }
 
 
-func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "UserProfile" {
-        if let destinationVC = segue.destination as? ViewController {
-            
-        }
-    }
-}
+//func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//    if segue.identifier == "UserProfile" {
+//        if let destinationVC = segue.destination as? ViewController {
+//            
+//        }
+//    }
+//}
 
