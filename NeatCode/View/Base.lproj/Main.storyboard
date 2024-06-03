@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--User Auth-->
+        <!--UserAuth-->
         <scene sceneID="YYH-i0-pJt">
             <objects>
                 <viewController id="OKl-N4-HIT" customClass="UserAuth" sceneMemberID="viewController">
@@ -58,6 +58,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="FetchDataGotPressed:" destination="OKl-N4-HIT" eventType="touchUpInside" id="sKH-DQ-29S"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="UserProfile" id="v7p-SJ-kyM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,12 +73,11 @@
                             <constraint firstItem="zuo-GF-LvP" firstAttribute="top" secondItem="NQs-Xt-3C6" secondAttribute="top" constant="100" id="xE6-hl-gGM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hOl-2b-hsO">
+                    <navigationItem key="navigationItem" title="UserAuth" id="hOl-2b-hsO">
                         <barButtonItem key="backBarButtonItem" title="Previous" id="swr-wN-4pV"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="UserNameEntered" destination="5Ni-Wp-06M" id="vXm-WW-lTI"/>
-                        <segue destination="BYZ-38-t0r" kind="show" id="MTA-ek-oH4"/>
+                        <outlet property="UserNamegotEntered" destination="5Ni-Wp-06M" id="NNL-Rl-L0v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7W-LU-VaC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
