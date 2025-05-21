@@ -81,6 +81,7 @@
 		63E78DCD2C05EC1600C8E159 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				63E78DCB2C05EB5600C8E159 /* SemiCircularProgressView.swift */,
 				63E78DBB2C05E37A00C8E159 /* Main.storyboard */,
 			);
 			path = View;
@@ -98,7 +99,6 @@
 		63E78DCF2C05EC3800C8E159 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				63E78DCB2C05EB5600C8E159 /* SemiCircularProgressView.swift */,
 				63C4AB962C064E6000B08D76 /* LeetcodeManager.swift */,
 				63477E0F2C0C88C4000A0BFC /* LeetcodeData.swift */,
 				63477E112C0C9979000A0BFC /* LeetcodeStructureModel.swift */,
