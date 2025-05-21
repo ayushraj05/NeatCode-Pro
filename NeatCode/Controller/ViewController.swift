@@ -25,15 +25,16 @@ class ViewController: UIViewController {
     
     var leetcodeManager = LeetcodeManager()
     var user = ""
+    var userAuthDelegate: UserAuthDelegate?
     
     // view did load
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
         semiProgress.trackColor = .lightGray
         semiProgress.progressColor = .systemYellow
         semiProgress.progress = 0.5
-//        leetcodeManager.delegate = self
+        leetcodeManager.delegate = self
     }
 
 }
@@ -43,6 +44,7 @@ class ViewController: UIViewController {
 extension ViewController : UserAuthDelegate{
     func searchUsername(username: String) {
         user = username
+        print(user)
     }
 }
 

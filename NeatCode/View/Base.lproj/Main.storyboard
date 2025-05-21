@@ -28,7 +28,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="FetchDataGotPressed:" destination="mLH-Zk-ped" eventType="touchUpInside" id="eTt-Kk-YsJ"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="UserProfile" id="ydC-Nj-HJb"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="d4A-6X-VJY">
@@ -63,11 +62,12 @@
                     <navigationItem key="navigationItem" id="TiW-c0-lvi"/>
                     <connections>
                         <outlet property="UserNamegotEntered" destination="BdN-SU-Afl" id="8s8-EF-9cN"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="UserProfile" id="tjJ-hI-V7R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S5Y-C8-cEJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4118.320610687023" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="4089" y="4"/>
         </scene>
         <!--NeatCode-->
         <scene sceneID="tne-QT-ifu">
@@ -432,7 +432,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Knk-lt-dmA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3191.6030534351144" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="3373" y="4"/>
         </scene>
     </scenes>
     <resources>

@@ -22,8 +22,14 @@ class UserAuth: UIViewController {
         UserNamegotEntered.delegate = self
         // Do any additional setup after loading the view.
     }
-
-   
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "UserProfile" {
+                if let destinationVC = segue.destination as? ViewController {
+                    destinationVC.userAuthDelegate = self
+                }
+            }
+        }
 
 }
 
@@ -54,9 +60,9 @@ extension UserAuth: UITextFieldDelegate{
         if let userName =  UserNamegotEntered.text  {
             // will send the username to the viewController to fech the data :)
             self.delegate?.searchUsername(username: userName)
-//            DispatchQueue.main.async {
-//                self.performSegue(withIdentifier: "UserProfile", sender: self)
-//            }
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "UserProfile", sender: self)
+            }
         }
         
         UserNamegotEntered.text = ""
@@ -66,12 +72,11 @@ extension UserAuth: UITextFieldDelegate{
 
 }
 
+extension UserAuth: UserAuthDelegate {
+    func searchUsername(username: String) {
+        // Implementation if needed
+    }
+}
 
-//func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//    if segue.identifier == "UserProfile" {
-//        if let destinationVC = segue.destination as? ViewController {
-//            
-//        }
-//    }
-//}
+
 
