@@ -7,33 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63477E102C0C88C4000A0BFC /* LeetcodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63477E0F2C0C88C4000A0BFC /* LeetcodeData.swift */; };
-		63477E122C0C9979000A0BFC /* LeetcodeStructureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63477E112C0C9979000A0BFC /* LeetcodeStructureModel.swift */; };
-		63C4AB952C06112500B08D76 /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4AB942C06112500B08D76 /* UserAuth.swift */; };
-		63C4AB972C064E6000B08D76 /* LeetcodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4AB962C064E6000B08D76 /* LeetcodeManager.swift */; };
 		63E78DB62C05E37A00C8E159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E78DB52C05E37A00C8E159 /* AppDelegate.swift */; };
 		63E78DB82C05E37A00C8E159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E78DB72C05E37A00C8E159 /* SceneDelegate.swift */; };
-		63E78DBA2C05E37A00C8E159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E78DB92C05E37A00C8E159 /* ViewController.swift */; };
-		63E78DBD2C05E37A00C8E159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E78DBB2C05E37A00C8E159 /* Main.storyboard */; };
 		63E78DBF2C05E37C00C8E159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E78DBE2C05E37C00C8E159 /* Assets.xcassets */; };
 		63E78DC22C05E37C00C8E159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E78DC02C05E37C00C8E159 /* LaunchScreen.storyboard */; };
-		63E78DCC2C05EB5600C8E159 /* SemiCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E78DCB2C05EB5600C8E159 /* SemiCircularProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		63477E0F2C0C88C4000A0BFC /* LeetcodeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeData.swift; sourceTree = "<group>"; };
-		63477E112C0C9979000A0BFC /* LeetcodeStructureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeStructureModel.swift; sourceTree = "<group>"; };
-		63C4AB942C06112500B08D76 /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
-		63C4AB962C064E6000B08D76 /* LeetcodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeManager.swift; sourceTree = "<group>"; };
 		63E78DB22C05E37A00C8E159 /* NeatCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeatCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E78DB52C05E37A00C8E159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E78DB72C05E37A00C8E159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63E78DB92C05E37A00C8E159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63E78DBC2C05E37A00C8E159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63E78DBE2C05E37C00C8E159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63E78DC12C05E37C00C8E159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63E78DC32C05E37C00C8E159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63E78DCB2C05EB5600C8E159 /* SemiCircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiCircularProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +67,6 @@
 		63E78DCD2C05EC1600C8E159 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				63E78DCB2C05EB5600C8E159 /* SemiCircularProgressView.swift */,
-				63E78DBB2C05E37A00C8E159 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,8 +74,6 @@
 		63E78DCE2C05EC2000C8E159 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				63C4AB942C06112500B08D76 /* UserAuth.swift */,
-				63E78DB92C05E37A00C8E159 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,9 +81,6 @@
 		63E78DCF2C05EC3800C8E159 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				63C4AB962C064E6000B08D76 /* LeetcodeManager.swift */,
-				63477E0F2C0C88C4000A0BFC /* LeetcodeData.swift */,
-				63477E112C0C9979000A0BFC /* LeetcodeStructureModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -166,7 +145,6 @@
 			files = (
 				63E78DC22C05E37C00C8E159 /* LaunchScreen.storyboard in Resources */,
 				63E78DBF2C05E37C00C8E159 /* Assets.xcassets in Resources */,
-				63E78DBD2C05E37A00C8E159 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,13 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63477E102C0C88C4000A0BFC /* LeetcodeData.swift in Sources */,
-				63C4AB972C064E6000B08D76 /* LeetcodeManager.swift in Sources */,
-				63C4AB952C06112500B08D76 /* UserAuth.swift in Sources */,
-				63E78DBA2C05E37A00C8E159 /* ViewController.swift in Sources */,
-				63E78DCC2C05EB5600C8E159 /* SemiCircularProgressView.swift in Sources */,
 				63E78DB62C05E37A00C8E159 /* AppDelegate.swift in Sources */,
-				63477E122C0C9979000A0BFC /* LeetcodeStructureModel.swift in Sources */,
 				63E78DB82C05E37A00C8E159 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		63E78DBB2C05E37A00C8E159 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63E78DBC2C05E37A00C8E159 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63E78DC02C05E37C00C8E159 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -342,7 +306,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = NeatCode;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -372,7 +335,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = NeatCode;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
