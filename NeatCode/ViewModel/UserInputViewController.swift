@@ -1,4 +1,11 @@
-// ViewControllers/UserInputViewController.swift
+//
+//  UserInputViewController.swift
+//  NeatCode
+//
+//  Created by Ayush Rajpal on 23/05/25.
+//
+
+
 import UIKit
 
 class UserInputViewController: UIViewController {
@@ -8,7 +15,7 @@ class UserInputViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(hex: "#121212")
+        view.backgroundColor = UIColor(.white)
         title = "LeetCode Stats"
         setupViews()
     }
@@ -20,7 +27,7 @@ class UserInputViewController: UIViewController {
         textField.translatesAutoresizingMaskIntoConstraints = false
 
         fetchButton.setTitle("Fetch Data", for: .normal)
-        fetchButton.tintColor = UIColor(hex: "#FFC107")
+        fetchButton.tintColor = UIColor(.black)
         fetchButton.titleLabel?.font = .boldSystemFont(ofSize: 18)
         fetchButton.translatesAutoresizingMaskIntoConstraints = false
         fetchButton.addTarget(self, action: #selector(fetchTapped), for: .touchUpInside)
