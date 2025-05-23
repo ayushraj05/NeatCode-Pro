@@ -1,7 +1,13 @@
-// Views/ProfileCardView.swift
+//
+//  ProfileCardView.swift
+//  NeatCode
+//
+//  Created by Ayush Rajpal on 23/05/25.
+//
+
+
 import UIKit
 
-/// Displays avatar, username, ranking, contributions
 class ProfileCardView: UIView {
     private let imageView = UIImageView()
     private let nameLabel = UILabel()
@@ -10,7 +16,7 @@ class ProfileCardView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor(hex: "#1E1E1E")
+        backgroundColor = UIColor(.black)
         layer.cornerRadius = 12
         setupSubviews()
     }
@@ -52,7 +58,7 @@ class ProfileCardView: UIView {
         ])
     }
 
-    /// Configure card with view model
+    
     func configure(with viewModel: ProfileViewModel) {
         nameLabel.text = viewModel.usernameText
         rankingLabel.text = viewModel.rankingText
