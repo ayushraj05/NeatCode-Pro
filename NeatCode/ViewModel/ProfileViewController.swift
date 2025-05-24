@@ -5,8 +5,6 @@
 //  Created by Ayush Rajpal on 24/05/25.
 //
 
-
-// ViewControllers/ProfileViewController.swift
 import UIKit
 
 class ProfileViewController: UIViewController {

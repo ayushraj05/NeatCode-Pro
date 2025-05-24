@@ -22,6 +22,7 @@
 		63DDD1632DE09806002F3A49 /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
 		63DDD1652DE098A4002F3A49 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		63DDD1672DE098F2002F3A49 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
+		63E20B822DE1E2BD006DBB2B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		63E78DB22C05E37A00C8E159 /* NeatCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeatCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E78DB52C05E37A00C8E159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E78DB72C05E37A00C8E159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		63E78DCE2C05EC2000C8E159 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				63E20B822DE1E2BD006DBB2B /* ProfileViewController.swift */,
 				63DDD1652DE098A4002F3A49 /* ProfileViewModel.swift */,
 				63DDD1672DE098F2002F3A49 /* UserInputViewController.swift */,
 			);
